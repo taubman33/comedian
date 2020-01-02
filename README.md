@@ -52,9 +52,28 @@ MVP: Add link to API Search Bar Returns single, or list of Jokes relevant to sea
 
 PMVP: Cross reference? 2 inputs for Intersectional jokes (Fat + Dentist, Mother in Law + Mean)
 
-Goals: Create a cleaner API search function than the Weather app. Make it look nicer too. Focus on time-management in seeing realistically how long it takes to get set up, get working, and then styling. End goal is to feel more comfortable creating and submitting this than with the Weather lab, which was my 1st (not counting the in-class Star Wars pulls) time working with an API
+Goals: Create a cleaner API search function than the Weather app. 
 
-Days Prior - Have API picked out, beginning to code Get function M - have basic framework in development T initial model W mvp working Th post mvp F: present
+Make it look nicer too. 
+
+Focus on time-management in seeing realistically how long it takes to get set up, get working, and then styling. 
+
+End goal is to feel more comfortable creating and submitting this than with the Weather lab, which was my 1st (not counting the in-class Star Wars pulls) time working with an API
+
+Schedule:
+
+
+Days Prior - Have API picked out, beginning to code Get function 
+
+M - have basic framework in development 
+
+T initial model 
+
+W mvp working 
+
+Th post mvp
+
+F: present
 
 Priority Matrix: https://i.imgur.com/BPOL4Qm.jpg
 

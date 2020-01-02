@@ -77,9 +77,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Setting up Site| H | 3hrs| |  |
+| Getting API working | H | 3hrs|  |  |
+| Styling | M | 4 hrs|  |  |
+| Troubleshooting Site | H | 5 -6 hrs|  |  |
+| Total |  | 15-20 hrs| |  |
 
 
 ## Code Snippet

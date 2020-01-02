@@ -15,8 +15,10 @@ Data sampling coming soon
 
 ## Wireframes
 
- https://wireframe.cc/yu3pEk https://imgur.com/a/BUHHQRZ I added a bit of color in Photoshop
-
+ - https://wireframe.cc/yu3pEk 
+ - https://imgur.com/a/BUHHQRZ I added a bit of color in Photoshop
+ - https://res.cloudinary.com/jtaubman/image/upload/v1577993707/Wireframe_rmylxv.jpg
+ 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
@@ -48,11 +50,16 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-https://i.imgur.com/BPOL4Qm.jpg
+- https://i.imgur.com/BPOL4Qm.jpg
+
+- https://res.cloudinary.com/jtaubman/image/upload/v1577993697/Priority_stl4hb.jpg
+
+
 
 ## Timeframes
 
-https://imgur.com/a/9DXRNSL 
+- https://imgur.com/a/9DXRNSL 
+- https://res.cloudinary.com/jtaubman/image/upload/v1577993715/Timesheet_ghrdxc.jpg
 
 Now that the API has been found, I imagine it will go somewhat like this:
 
@@ -63,7 +70,7 @@ Now that the API has been found, I imagine it will go somewhat like this:
 
 ## API Data Sample
 
-Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+https://res.cloudinary.com/jtaubman/image/upload/v1577994349/APICode_za5ffi.png
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.

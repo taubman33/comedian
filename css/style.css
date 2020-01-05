@@ -1,10 +1,11 @@
 body
 {
  font-family: 'Limelight', cursive;
- background-color: red;
- background-image: url("images/curtains2.jpg");
+ background-color: #a10c0c;
+ /*background-image: url("images/curtains2.jpg");*/
  background-repeat: no-repeat;
  background-attachment: fixed;
+ background-position: cover;
  text-align: center;
 }
 
@@ -12,6 +13,9 @@ header {
     background-color: white;
     border: 12px solid #f6e10b ;
     margin-top: 35px;
+    width: 80%;
+    margin-left: 12em;
+    
 }
 
 #inputBar {
@@ -28,7 +32,7 @@ header {
 
 h1 { 
     text-align: center;
-    font-size: 82px;
+    font-size: 60px;
     letter-spacing: 5px;
     text-shadow: 3px 3px #980707;
     color: black;
@@ -85,7 +89,7 @@ footer {
     color: white;
     text-shadow: 3px 3px black;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 
@@ -102,19 +106,4 @@ footer {
 @media only screen and (max-width: 600px) {
     
 
-    /* .main-content {
-        text-align: center;
-    }
-
-    .header-container {     
-        height: 300px;
-    }
-
-    .title {
-        font-size: 1.5em;
-        text-align: center;
-    } */
-
 }
-
-@media

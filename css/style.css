@@ -2,7 +2,7 @@ body
 {
  font-family: 'Limelight', cursive;
  background-color: #a10c0c;
- /*background-image: url("images/curtains2.jpg");*/
+ background-image: url("images/curtains2.jpg");
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: cover;
@@ -14,7 +14,7 @@ header {
     border: 12px solid #f6e10b ;
     margin-top: 35px;
     width: 80%;
-    margin-left: 12em;
+    margin-left: 7em;
     
 }
 
@@ -71,14 +71,14 @@ img {
     text-shadow: 1px 1px #980707;
     width: 35%;
     font-size: 36px; 
-    animation-name: example;
-    animation-duration: 4s;
-    background-color: white;
     border: 4px solid #f6e10b ;
     padding: 5px;
     display: flex;
     flex-direction: column;
     position: center;
+    animation-name: example;
+    animation-duration: 3s;
+    background-color: white;
    
  }
  

@@ -2,7 +2,7 @@
 
 let jokeInput = document.querySelector('#inputBar');
 let getJoke = document.querySelector('#getJoke');
-const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
+const jokeUrl = `https://icanhazdadjoke.com/`;
 console.log (`Part 1 + jokeInput ${jokeInput} + jokeURL ${jokeUrl} `);
 
 //async function . using the async function to retrieve info 

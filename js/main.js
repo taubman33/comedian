@@ -2,14 +2,13 @@
 
 let jokeInput = document.querySelector('#inputBar');
 let getJoke = document.querySelector('#getJoke');
-const jokeUrl = `https://icanhazdadjoke.com`;
-// const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
+let query = '';
+const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
+
 console.log (`Part 1 + jokeURL ${jokeUrl} `);
 
-//async function . using the async function to retrieve info 
-
-
-
+//async function . using the async function to retrieve info
+//curl -H "User-Agent: My Library (https://git.generalassemb.ly/jtaubman/Everyones-A-Comedian)" https://icanhazdadjoke.com/
 async function getData () {
     try {
         const options = {
@@ -25,8 +24,6 @@ async function getData () {
         let joke = result.data.joke
         console.log("Part 2 + ", joke )
 
-
-
         // let splitJoke = joke.split('?')
         // console.log(splitJoke)
         // let splitJoke = joke.split('?', '.')
@@ -39,31 +36,31 @@ async function getData () {
         let jokeReturn =  document.querySelector('.jokeReturn')
         jokeReturn.innerHTML = ''
         jokeReturn.append(joke)
-        console.log (`Part 4 `)
+        console.log (`Part 3 + ${query}` )
 
-
-        
         } catch (error) {
         console.log(error);
    }  
 }
-// //making a new city Object each time we enter and submit info
-// const newJoke = function(event) {
-//     //prevents site from reloading with each click
-//     event.preventDefault()
-//     let jokeReturn = jokeInput.value
-//     //calling our getWeather function here
-//     getData(jokeReturn)
-//     console.log(jokeReturn)
-// }
-getJoke.addEventListener('click', getData)
 
+getJoke.addEventListener('click', getData);
 
-// Dropdown 
+// adding SearchBar for joke search
+let form2 = document.querySelector("#form2")
+getJoke.addEventListener('click', function() {
+    event.preventDefault()
+    jokeInput = document.querySelector('#inputBar')
+    query = jokeInput.value
+    console.log(`Input bar: ${query}`)
+    // getData(query)   
+})
 
+// possibly using Dropdown menu instead of searchbar 
 // let jokeTopic = document.getElementById('dropBtn');
 // jokeTopic = `${jokeTopic}
 
 
+//once we get search bar working, making sure only One joke is appended into HTML
+// document.append value [0]
 
 

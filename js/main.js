@@ -1,66 +1,78 @@
-//setting up access to Joke API
+// JT GA API Lab
+
 
 let jokeInput = document.querySelector('#inputBar');
 let getJoke = document.querySelector('#getJoke');
-let query = '';
+// let query = '';
 const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
-
 console.log (`Part 1 + jokeURL ${jokeUrl} `);
 
-//async function . using the async function to retrieve info
-//curl -H "User-Agent: My Library (https://git.generalassemb.ly/jtaubman/Everyones-A-Comedian)" https://icanhazdadjoke.com/
-async function getData () {
+async function getData (e) {
+    e.preventDefault()
+    const jokeList = document.querySelector(`#returnJoke`)
+    // while (jokeList.lastChild) {
+    //     jokeList.removeChild(jokeList.lastChild)
+    // }
+
     try {
+        const searchTerm = document.querySelector('#inputBar').value
+        console.log(searchTerm)
+        const URL = `https://icanhazdadjoke.com/search?term=${searchTerm}`
         const options = {
-            url: `https://icanhazdadjoke.com/`,
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             }
         }
-        let result = await axios(options)
+    
+        let result = await axios.get(URL, options)
+        const jokeData = result.data.results
+        console.log("Part 2 + ", jokeData)
 
-        let joke = result.data.joke
-        console.log("Part 2 + ", joke )
-
-        // let splitJoke = joke.split('?')
-        // console.log(splitJoke)
-        // let splitJoke = joke.split('?', '.')
-        // console.log("part 3  +",  splitJoke)
-        // splitJoke. if has ? or . adds <br> to html
-
-        let jokeName = document.createElement('jokeReturn')
-        jokeName.innerHTML = (joke)
+     
+        jokeData.forEach ( object =>{
+            const jokeList = document.querySelector('div')
+            let newJoke = document.createElement('div')
+            newJoke.innerHTML = object.joke
+            jokeList.append(newJoke)
+        })
         
-        let jokeReturn =  document.querySelector('.jokeReturn')
-        jokeReturn.innerHTML = ''
-        jokeReturn.append(joke)
-        console.log (`Part 3 + ${query}` )
-
         } catch (error) {
         console.log(error);
-   }  
-}
+     }  
+    }
+    getJoke.addEventListener('click', getData);
+    
+    
+    // possibly using Dropdown menu instead of searchbar?
+    // let jokeTopic = document.getElementById('dropBtn');
+    // jokeTopic = `${jokeTopic}
+    
+    
 
-getJoke.addEventListener('click', getData);
-
-// adding SearchBar for joke search
-let form2 = document.querySelector("#form2")
-getJoke.addEventListener('click', function() {
-    event.preventDefault()
-    jokeInput = document.querySelector('#inputBar')
-    query = jokeInput.value
-    console.log(`Input bar: ${query}`)
-    // getData(query)   
-})
-
-// possibly using Dropdown menu instead of searchbar 
-// let jokeTopic = document.getElementById('dropBtn');
-// jokeTopic = `${jokeTopic}
-
-
-//once we get search bar working, making sure only One joke is appended into HTML
-// document.append value [0]
+// let jokeName = document.createElement('jokeReturn')
+        // jokeName.innerHTML = (joke)
+        
+        // let jokeReturn =  document.querySelector('.jokeReturn')
+        // jokeReturn.innerHTML = ''
+        // jokeReturn.append(joke)
+        // console.log (`Part 3 + ${query}` )
 
 
+    //once we get search bar working, making sure only One joke is appended into HTML
+    // document.append -> value [0]
+    
+
+        // jokeData.forEach ( object => )
+
+        // splitting joke into 2 lines rather than 1 block of text -> some jokes have 3 lines
+        // let splitJoke = joke.split('?', '.')
+        // console.log("split joke + ", splitJoke)
+        // function splitStr(joke) { 
+        //     var string = str.split("*"); 
+        //     console.log(string); 
+        // } 
+        // splitJoke. if has ? or . adds <br> to html       
+
+        

@@ -31,25 +31,24 @@ async function getData (e) {
         console.log("Part 2 + ", jokeData)
 
      
-        jokeData.forEach ( object =>{
-            const jokeList = document.querySelector('div')
-            let newJoke = document.createElement('div')
-            newJoke.innerHTML = object.joke
-            jokeList.append(newJoke)
-        })
         
+            const jokeList = document.querySelector('.jokeReturn')
+            let newJoke = document.createElement('li')
+            jokeList.innerHTML = jokeData[0].joke
+            // [0].joke            
+            
+            // newJoke.innerHTML = object.joke
+            // jokeList.append(newJoke.)
         } catch (error) {
         console.log(error);
      }  
     }
     getJoke.addEventListener('click', getData);
     
+
+
     
-    // possibly using Dropdown menu instead of searchbar?
-    // let jokeTopic = document.getElementById('dropBtn');
-    // jokeTopic = `${jokeTopic}
-    
-    
+
 
 // let jokeName = document.createElement('jokeReturn')
         // jokeName.innerHTML = (joke)
@@ -64,7 +63,6 @@ async function getData (e) {
     // document.append -> value [0]
     
 
-        // jokeData.forEach ( object => )
 
         // splitting joke into 2 lines rather than 1 block of text -> some jokes have 3 lines
         // let splitJoke = joke.split('?', '.')

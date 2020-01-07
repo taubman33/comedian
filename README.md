@@ -11,7 +11,7 @@ Searching Joke API’s by keyword to find new jokes, a quick way to make anybody
 ## API and Data Sample
 
 https://icanhazdadjoke.com/api
-Data sampling coming soon
+
 
 ## Wireframes
 
@@ -41,10 +41,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 2rd| Project Prompt | Submitted to Steve
-|Jan 3rd| Wireframes / Priority Matrix / Functional Components | Incomplete
-|Jan 5th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 6th| Pseudocode / actual code | Incomplete
-|Jan 7th| Initial Clickable Model  | Incomplete
+|Jan 3rd| Wireframes / Priority Matrix / Functional Components | Complete
+|Jan 5th| Core Application Structure (HTML, CSS, etc.) | Complete
+|Jan 6th| Pseudocode / actual code | Complete
+|Jan 7th| Initial Clickable Model  | Today
 |Jan 8th| MVP | Incomplete
 |Jan 9th| Present | Incomplete
 
@@ -77,11 +77,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Setting up Site| H | 3hrs| |  |
-| Getting API working | H | 3hrs|  |  |
-| Styling | M | 4 hrs|  |  |
-| Troubleshooting Site | H | 5 -6 hrs|  |  |
-| Total |  | 15-20 hrs| |  |
+| Setting up Site| H | 3hrs| 4-5 |  5|
+| Getting API working | H | 3hrs| 5-6 | 6 |
+| Styling | M | 4 hrs| 5 |5  |
+| Troubleshooting Site | H | 5 -6 hrs| 3 | 3 |
+| Total |  | 15-20 hrs|20ish |  |
 
 
 ## Code Snippet

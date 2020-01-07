@@ -85,9 +85,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
-I had to use an interesting way of calling the API, it took a lot of help from Steve to get it to work. I also needed some help from Michael in getting the audio file to play properly. So while I am proud of how those two functions have worked out, I would not feel good putting them here. 
+I had to use an interesting way of calling the API, it took a lot of help from Steve to get it to work. I also needed some help from Michael in getting the audio file to play properly. So while I am proud of how those two functions have worked out, I would not feel right putting them here since I was so reliant on the instructors to get them working. 
 
 I am happy with the styling now, especially in the main div section where the jokes are loading into the container, flanked by the two images. I used photoshop to make the images the same sizes so they would fit in easily (both scaled width + height 25%), and used Flex to get them aligned properly, which I am feeling more comfortable using now than I was when I began this. 
 I have a feeling that this is not going to format properly in this, but;

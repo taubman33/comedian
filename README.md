@@ -16,7 +16,6 @@ https://icanhazdadjoke.com/api
 ## Wireframes
 
  - https://wireframe.cc/yu3pEk 
- - https://imgur.com/a/BUHHQRZ I added a bit of color in Photoshop
  - https://res.cloudinary.com/jtaubman/image/upload/v1577993707/Wireframe_rmylxv.jpg
  
 ### MVP/PostMVP - 5min
@@ -31,8 +30,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP 
 
-- Cross reference? 2 inputs for Intersectional jokes (Fat + Dentist, Mother in Law + Mean)
-- because the API part of this site will be simple enough, I'd like the styling to be better than what I've been doing before
+- adding audio to site -> drum roll .6s after each joke get
+- styling 
 
 ## Project Schedule 
 
@@ -88,11 +87,35 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+I had to use an interesting way of calling the API, it took a lot of help from Steve to get it to work. I also needed some help from Michael in getting the audio file to play properly. So while I am proud of how those two functions have worked out, I would not feel good putting them here. 
+
+I am happy with the styling now, especially in the main div section where the jokes are loading into the container, flanked by the two images. I used photoshop to make the images the same sizes so they would fit in easily (both scaled width + height 25%), and used Flex to get them aligned properly, which I am feeling more comfortable using now than I was when I began this. 
+I have a feeling that this is not going to format properly in this, but;
+
+.container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
-```
+
+Once I get the text animation (transitioning from White to Black) working properly I will add it in here as well
+
+@keyframes example {
+    from {color: #fef9e7;}
+    to {color: black;}
+  }
+    
+  .jokeReturn { 
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    }
+
+
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+- I initially wanted to have 2 seperate search functions, to cross reference the joke search ("fat" + "dentist"), but that didn't work too well, especially with the limited number of jokes on the DadJoke API, so I removed that
+- I wanted to add something multimedia so I added in an audio file (drum roll) to play every time the joke function is ran. I also added a 600ms/.6s timeout delay between the call function and the audio playing (allowing people time to read the joke, and let it load up if internet is slow)
+ 
+ 
+ 

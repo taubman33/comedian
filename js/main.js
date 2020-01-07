@@ -6,8 +6,8 @@ let getJoke = document.querySelector('#getJoke');
 const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
 console.log (`Part 1 + jokeURL ${jokeUrl} `);
 
-async function getData (e) {
-    e.preventDefault()
+async function getData (event) {
+    event.preventDefault()
     const jokeList = document.querySelector(`#returnJoke`)
 
     try {
@@ -31,8 +31,16 @@ async function getData (e) {
         const randomNum = Math.floor(Math.random() * 10);
         jokeList.innerHTML = jokeData[`${randomNum}`].joke
         
+        const mediaElem = document.getElementById("audio");
+        setTimeout(() => {
+            mediaElem.play()
+        }, 600)
+
         } catch (error) {
         console.log(error);
      }  
     }
-    getJoke.addEventListener('click', getData);
+
+
+
+getJoke.addEventListener('click', getData);

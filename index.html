@@ -4,7 +4,10 @@
   <title>JT GA Joke API Lab</title> 
   <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/style.css">
+  
+ 
 </head>
+
 <body>
   <header>
 <h1>Everyone's A Comedian!</h1>
@@ -17,43 +20,49 @@
     <input type="text" name="inputBar" value="" placeholder="something below" id="inputBar">
     <input type="button" name = "getJoke" value="Get a joke" id="getJoke">
   </form>
-
   
 <br>
 
   <div class="container">
-    <img src = "css/images/carlin1.jpg">   
+    <img src = "css/media/carlin1.jpg">   
       <div class='jokeReturn'>
-        <p></p>
-      </div>
-      <img src = "css/images/pryor.jpg">
+      </div>     
+      <img src = "css/media/pryor.jpg"> 
   </div>  
  <br> 
 
- <footer>
+
+
+<footer>
 
   <div class ="bottom">
-      <h3>All jokes linked from 
-      <a href="https://icanhazdadjoke.com/api">I Can Haz Dad Joke API.</a>
-      <br>  Even the really bad ones
-      <br> (especially the really bad ones)
-      <br> 2020 Jeremy Taubman GA
-      </h3>  
-    </div>
-  
-      <div class = footerIcons>
-      <img class="icons" href="http//www.facebook.com" src="css/images/fb1.png" alt="Facebook">
-      <img class="icons" href="http//www.linkedin.com" src="css/images/li1.png" alt="LinkedIn">
-      <img class="icons" href="http//www.instagram.com" src="css/images/ig1.png" alt="Instagram">
-  
-    </div>
-    
-  </footer>
-  
-  
+    <h3>All jokes linked from 
+    <a href="https://icanhazdadjoke.com/api">I Can Haz Dad Joke API.</a>
+    <br>  Even the really bad ones
+    <br> (Especially the really bad ones)
+    <br> 2020 Jeremy Taubman GA
+    </h3>  
+  </div>
 
+    <div class = footerIcons>
+    <a href="https://www.facebook.com/jtaubman"> <img class="icons" src="css/media/fb1.png" alt="Facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/jeremy-taubman-23736460/"> <img class="icons" src="css/media/li1.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com"> <img class="icons" src="css/media/ig1.png" alt="Instagram">
+   </a>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>  
+  </div>
+
+</footer>
+
+<audio id = "audio">
+  <source src="css/media/drum.mp3" type="audio/mp3" id="drum">
+  Your browser does not support this audio file, what a joke!
+</audio>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>  
+
 </body>
 </html>

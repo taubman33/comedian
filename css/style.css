@@ -95,7 +95,7 @@ footer {
     border-radius: 25px; */
     height: 110px;
     width: 46%;
-    margin-left: 21em;
+    margin-left: 19em;
 
 }
 
@@ -110,12 +110,18 @@ footer {
 
 /* setting for smaller screened devices */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) 
+
+{
 body{ 
     text-align: center;
+    background-color: #a10c0c;
+    background-image: none;
 }
 
-    .jokeReturn  {
+
+
+.jokeReturn  {
     border-radius: 25px;
 }
 

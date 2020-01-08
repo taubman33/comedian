@@ -31,10 +31,10 @@ async function getData (event) {
         const randomNum = Math.floor(Math.random() * 10);
         jokeList.innerHTML = jokeData[`${randomNum}`].joke
         
-        const mediaElem = document.getElementById("audio");
-        setTimeout(() => {
-            mediaElem.play()
-        }, 600)
+        // const mediaElem = document.getElementById("audio");
+        // setTimeout(() => {
+        //     mediaElem.play()
+        // }, 600)
 
         } catch (error) {
         console.log(error);

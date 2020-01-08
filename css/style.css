@@ -3,7 +3,6 @@ body
  font-family: 'Limelight', cursive;
  background-color: #a10c0c;
  background-image: url("media/curtains3.jpg");
- background-repeat: no-repeat;
  background-size : cover;
  background-attachment: fixed;
  text-align: center;
@@ -14,10 +13,9 @@ header {
     border: 12px solid #f6e10b ;
     margin-top: 15px;
     border-radius: 25px;
-    padding: 20px;
-    width: 73%;
-    margin-left: 9em;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
 }
 
 #inputBar {
@@ -46,23 +44,24 @@ h2 {
     color: #f6e10b; 
     font-size: 28px;
     text-shadow: 3px 3px black;
+    font-weight: 100;
 }
 
 
 img {
-  height: 25%;
-  width:  25%;
+  height: 45%;
+  width:  30%;
   display: flex;
   flex-direction: row;
   border: 6px solid #f6e10b;
-  border-radius: 25px;
+  border-radius: 25px 0px 0px 25px;
 }
 
 
 .container {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   margin-left: 9em;
 }
 
 @keyframes example {
@@ -71,10 +70,10 @@ img {
   }
 
 .jokeReturn {
-    width: 35%;
+    width: 55%;
     background-color: #fef9e7;
     border: 6px solid #f6e10b;
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 0px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -88,15 +87,15 @@ img {
  }
 
 footer {
-    color: black;
+    /* color: black;
     font-size: 14px;
     letter-spacing: 2px;
     background-color: #fef9e7;
     border: 6px solid #f6e10b;
-    border-radius: 25px;
+    border-radius: 25px; */
     height: 110px;
     width: 46%;
-    margin-left: 24em;
+    margin-left: 21em;
 
 }
 
@@ -111,10 +110,13 @@ footer {
 
 /* setting for smaller screened devices */
 
-@media only screen and (max-width: 600px) {
- 
-.jokeReturn{
-width: 60%; 
+@media only screen and (max-width: 700px) {
+body{ 
+    text-align: center;
+}
+
+    .jokeReturn  {
+    border-radius: 25px;
 }
 
 img {
@@ -122,7 +124,7 @@ img {
  } 
 
  footer {
-     text-align: center;
+     display: none;
  }
 
 

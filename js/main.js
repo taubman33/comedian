@@ -12,7 +12,7 @@ async function getData (event) {
 
     try {
         const searchTerm = document.querySelector('#inputBar').value
-        console.log(searchTerm)
+        //console.log(searchTerm)
         const URL = `https://icanhazdadjoke.com/search?term=${searchTerm}`
         const options = {
             method: 'GET',
@@ -24,7 +24,7 @@ async function getData (event) {
     
         let result = await axios.get(URL, options)
         const jokeData = result.data.results
-        console.log("Part 2 + ", jokeData)
+        //console.log("Part 2 + ", jokeData)
         
         const jokeList = document.querySelector('.jokeReturn')
         let newJoke = document.createElement('li')

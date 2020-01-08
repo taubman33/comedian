@@ -31,10 +31,14 @@ header {
     padding: 10px;
 }
 
+#getJoke:hover {
+  background-color: #971814;
+
+}
 
 h1 { 
     text-align: center;
-    font-size: 60px;
+    font-size: 75px;
     letter-spacing: 5px;
     text-shadow: 3px 3px #971814;
     color: black;
@@ -49,8 +53,8 @@ h2 {
 
 
 img {
-  height: 45%;
-  width:  30%;
+  height: 50%;
+  width:  35%;
   display: flex;
   flex-direction: row;
   border: 6px solid #f6e10b;
@@ -62,6 +66,8 @@ img {
    display: flex;
    flex-direction: row;
    margin-left: 9em;
+   overflow: auto;
+   
 }
 
 @keyframes example {
@@ -103,14 +109,14 @@ footer {
     margin-top: -2em;
     height: 10%;
     width: 10%;
-    margin: 20px;
+    margin: 15px;
     display: inline;
     border: none; 
 }
 
 /* setting for smaller screened devices */
 
-@media only screen and (max-width: 700px) 
+@media screen and (max-width: 600px) 
 
 {
 body{ 
@@ -123,6 +129,7 @@ body{
 
 .jokeReturn  {
     border-radius: 25px;
+    height: 40%;
 }
 
 img {

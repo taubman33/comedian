@@ -4,6 +4,7 @@ body
  background-color: #a10c0c;
  background-image: url("media/curtains3.jpg");
  background-size : cover;
+ background-position: center;
  background-attachment: fixed;
  text-align: center;
 
@@ -37,6 +38,7 @@ header {
   background-color: #971814;
 
 }
+
 
 h1 { 
     text-align: center;
@@ -93,16 +95,11 @@ img {
      }
 
 .long {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 footer {
-    /* color: black;
-    font-size: 14px;
-    letter-spacing: 2px;
-    background-color: #fef9e7;
-    border: 6px solid #f6e10b;
-    border-radius: 25px; */
+ 
     height: 110px;
     width: 46%;
     margin-left: 19em;
@@ -125,20 +122,23 @@ footer {
 
 /* setting for smaller screened devices */
 
-@media screen and (max-width: 600px) 
-
+@media screen and (max-width: 992px) 
 {
 body{ 
-    text-align: center;
-    background-color: #a10c0c;
     background-image: none;
+    background-color: #a10c0c;
+    
 }
 
-
+div {
+    height: 60%;
+}
 
 .jokeReturn  {
     border-radius: 25px;
-    height: 40%;
+    height: 10em;
+    text-align: center;
+    margin-left: 4em;
 }
 
 img {
@@ -149,6 +149,16 @@ img {
      display: none;
  }
 
-
-
 }
+@media screen and (max-width: 400px)
+
+{
+
+img {
+    display: none;    
+}    
+
+.jokeReturn  {
+    border-radius: 25px;
+    text-align: center;
+} 

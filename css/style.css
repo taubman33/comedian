@@ -6,6 +6,7 @@ body
  background-size : cover;
  background-attachment: fixed;
  text-align: center;
+
 }
 
 header {
@@ -73,7 +74,7 @@ img {
 
 @keyframes example {
     from {color: #fef9e7;}
-    to {color: black;}
+    to {color: darkslategray;}
   }
 
 .jokeReturn {
@@ -89,9 +90,11 @@ img {
     animation-timing-function: linear;
     animation-duration: 4s;
     font-size: 39px;
-    
-   
- }
+     }
+
+.long {
+    font-size: 28px;
+}
 
 footer {
     /* color: black;

@@ -30,17 +30,24 @@ async function getData (event) {
         let newJoke = document.createElement('li')
         const randomNum = Math.floor(Math.random() * 10);
         jokeList.innerHTML = jokeData[`${randomNum}`].joke
-        
-        // const mediaElem = document.getElementById("audio");
-        // setTimeout(() => {
-        //     mediaElem.play()
-        // }, 600)
 
-        } catch (error) {
+       
+        let str = jokeList.innerHTML;
+        let strLength = str.length; 
+
+        if (strLength >= 150) {
+         newJoke.setAttribute('class', 'long')
+          } else if (strLength <= 200) {
+          }
+        
+        const mediaElem = document.getElementById("audio");
+        setTimeout(() => {
+            mediaElem.play()
+        }, 600)
+
+     } catch (error) {
         console.log(error);
      }  
     }
-
-
 
 getJoke.addEventListener('click', getData);

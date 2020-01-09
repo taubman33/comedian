@@ -1,4 +1,5 @@
 // JT GA API Lab
+//.js file
 
 let jokeInput = document.querySelector('#inputBar');
 
@@ -8,8 +9,9 @@ const jokeUrl = `https://icanhazdadjoke.com/search?term=${jokeInput.value}`;
 console.log (`Part 1 + jokeURL ${jokeUrl} `);
 
 async function getData (event) {
-
+    
     event.preventDefault()
+    //this will mark the list of jokes called into the Return Joke div
     const jokeList = document.querySelector(`#returnJoke`)
 
     try {
@@ -30,13 +32,15 @@ async function getData (event) {
         const jokeData = result.data.results
         //console.log("Part 2 + ", jokeData)
         
+
+        //sets up the list of jokes pulled from the API and puts them into the li section of the jokeReturn div
         const jokeList = document.querySelector('.jokeReturn')
         let newJoke = document.createElement('li')
 
             const randomNum = Math.floor(Math.random() * 10);
              jokeList.innerHTML = jokeData[`${randomNum}`].joke
 
-       
+       //setting up so if the joke is longer than 250 characters, the size of the font will decrease
         let str = jokeList.innerHTML;
         let strLength = str.length; 
 
@@ -45,6 +49,8 @@ async function getData (event) {
           } else if (strLength <= 150) {
           }
         
+
+        //setting up the audio file, giving it a .6s delay
         const mediaElem = document.getElementById("audio");
         setTimeout(() => {
             mediaElem.play()
@@ -55,4 +61,6 @@ async function getData (event) {
      }  
     }
 
+
+//setting up clicking the Get Joke button to run the getData function that pulls the joke
 getJoke.addEventListener('click', getData);

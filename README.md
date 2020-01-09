@@ -47,8 +47,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Jan 5th| Core Application Structure (HTML, CSS, etc.) | Complete
 |Jan 6th| Pseudocode / actual code | Complete
 |Jan 7th| Initial Clickable Model  | Complete
-|Jan 8th| MVP | Today
-|Jan 9th| Present | Incomplete
+|Jan 8th| MVP | Complete
+|Jan 9th| Present | Today
 
 ## Priority Matrix
 
@@ -81,9 +81,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Setting up Site| H | 3hrs| 4-5 |  5|
 | Getting API working | H | 3hrs| 5-6 | 6 |
-| Styling | M | 4 hrs| 5 |5  |
-| Troubleshooting Site | H | 5 -6 hrs| 3 | 3 |
-| Total |  | 15-20 hrs|20ish |  |
+| Styling | M | 4 hrs| 9-10 |10  |
+| Troubleshooting Site | H | 5 -6 hrs| 6+ | 7-8 |
+| Total |  | 15-20 hrs|20ish | 30 |
 
 
 ## Code Snippet
